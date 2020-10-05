@@ -60,16 +60,16 @@ function NavBar(props) {
       name: "Blog",
       icon: <BookIcon className="text-white" />
     },
-    {
-      name: "Register",
-      onClick: openRegisterDialog,
-      icon: <HowToRegIcon className="text-white" />
-    },
-    {
-      name: "Login",
-      onClick: openLoginDialog,
-      icon: <LockOpenIcon className="text-white" />
-    }
+    // {
+    //   name: "Register",
+    //   onClick: openRegisterDialog,
+    //   icon: <HowToRegIcon className="text-white" />
+    // },
+    // {
+    //   name: "Login",
+    //   onClick: openLoginDialog,
+    //   icon: <LockOpenIcon className="text-white" />
+    // }
   ];
   return (
     <div className={classes.root}>
