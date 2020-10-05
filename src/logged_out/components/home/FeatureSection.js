@@ -1,15 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Grid, Typography, isWidthUp, withWidth } from "@material-ui/core";
-import CodeIcon from "@material-ui/icons/Code";
 import FilterHdr from "@material-ui/icons/FilterHdr";
 import InsertEmoticon from "@material-ui/icons/InsertEmoticon";
 import Waves from "@material-ui/icons/Waves";
-import HeadsetMicIcon from "@material-ui/icons/HeadsetMic";
 import Accessibility from "@material-ui/icons/Accessibility";
-import CloudIcon from "@material-ui/icons/Cloud";
 import ImportContacts from "@material-ui/icons/ImportContacts";
-import CancelIcon from "@material-ui/icons/Cancel";
 import calculateSpacing from "./calculateSpacing";
 import FeatureCard from "./FeatureCard";
 import WaveBorder from "../../../shared/components/WaveBorder";

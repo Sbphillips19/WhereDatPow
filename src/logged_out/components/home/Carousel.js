@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import Pow from '../../../shared/snowkite/pow.jpg'
@@ -101,7 +101,7 @@ const styles = (theme) => ({
 
 
 function CarouselImages(props) {
-    const { classes, theme, width } = props;
+    const { classes, theme } = props;
 
     return (
         <>
@@ -109,31 +109,31 @@ function CarouselImages(props) {
                 <div style={{ maxWidth: 600, width: '100%', margin: 'auto', paddingTop: 100 }}>
                     <Carousel>
                         <div>
-                            <img src={Pow3} />
+                            <img alt="alt" src={Pow3} />
                             <p className="legend">Make your own line</p>
                         </div>
                         <div>
-                            <img src={Skyline} />
+                            <img alt="alt" src={Skyline} />
                             <p className="legend">Skyline, Utah</p>
                         </div>
                         <div>
-                            <img src={Skyline2} />
+                            <img alt="alt" src={Skyline2} />
                             <p className="legend">Have fun, be free</p>
                         </div>
                         <div>
-                            <img src={Snowmobile} />
+                            <img alt="alt" src={Snowmobile} />
                             <p className="legend">Get lines you never would have imagined</p>
                         </div>
                         <div>
-                            <img src={Skyline3} />
+                            <img alt="alt" src={Skyline3} />
                             <p className="legend">Get fresh lines</p>
                         </div>
                         <div>
-                            <img src={Pow} />
+                            <img alt="alt" src={Pow} />
                             <p className="legend">Find Deep Powder</p>
                         </div>
                         <div>
-                            <img src={Pow2} />
+                            <img alt="alt" src={Pow2} />
                             <p className="legend">Get some freshies</p>
                         </div>
                     </Carousel>
