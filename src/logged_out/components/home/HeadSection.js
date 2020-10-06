@@ -10,7 +10,8 @@ import {
   isWidthUp,
 } from "@material-ui/core";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import Jumping from '../../../shared/snowkite/air.jpg'
+// import Jumping from '../../../shared/snowkite/air.jpg';
+import Dna from '../../../shared/snowkite/dna.jpg'
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -121,7 +122,7 @@ function HeadSection(props) {
                     >
                       Salt Lake City Kite School
                         </Typography>
-                    <img src={Jumping} alt="jumping" style={{ maxWidth: 1000, width: '100%', marginTop: 20 }} />
+                    <img src={Dna} alt="dna" style={{ maxWidth: 1000, width: '100%', marginTop: 20 }} />
                   </Box>
                 </Box>
               </div>
