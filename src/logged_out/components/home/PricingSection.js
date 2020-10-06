@@ -136,10 +136,49 @@ function PricingSection(props) {
               pricing={
                 <span>
                   $100
-                  <Typography display="inline"> / month</Typography>
+                  <Typography display="inline"> / hour</Typography>
                 </span>
               }
               features={["For intermediate/advanced riders", "Learn how to jump propery and boost higher", "Learn how to glide down the mountain"]}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            lg={3}
+            className={classes.cardWrapper}
+            data-aos="zoom-in-up"
+          >
+            <PriceCard
+              title="Drone photography"
+              pricing={
+                <span>
+                  $100
+                  <Typography display="inline"> / hour</Typography>
+                </span>
+              }
+              features={["Mavic Air 2", "Comes with SD card", "We will record you and give you the SD card at the end of your session"]}
+            />
+          </Grid>
+          <Grid
+            item
+            className={classes.cardWrapper}
+            xs={12}
+            sm={6}
+            lg={3}
+            data-aos="zoom-in-up"
+            data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
+          >
+            <PriceCard
+              title="Backcountry Expeditions"
+              pricing={
+                <span>
+                  Contact for prices
+                  <Typography display="inline"> / hour</Typography>
+                </span>
+              }
+              features={["Kiteboard backcountry", "Advanced riders only", "Must provide proof of avy 1 and understand risks"]}
             />
           </Grid>
         </Grid>

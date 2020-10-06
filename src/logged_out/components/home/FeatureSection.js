@@ -57,7 +57,7 @@ const features = [
     color: "#DD2C00",
     headline: "Improve Water Riding",
     text:
-      "Kiting snow helps improve your water riding.  You will have to get good at kite loops which help with waves, foiling, and softening landings",
+      "Kiting snow helps improve your water riding.  You will have to get good at looping your kite which help with waves, foiling, and softening landings",
     icon: <Waves style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "0"
