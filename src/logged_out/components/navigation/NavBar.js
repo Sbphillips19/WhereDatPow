@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import {
   AppBar,
   Toolbar,
-  Typography,
+  // Typography,
   Button,
   Hidden,
   IconButton,
@@ -16,6 +16,7 @@ import HowToRegIcon from "@material-ui/icons/HowToReg";
 import LockOpenIcon from "@material-ui/icons/LockOpen";
 import BookIcon from "@material-ui/icons/Book";
 import NavigationDrawer from "../../../shared/components/NavigationDrawer";
+import Logo from '../../../shared/logos/snowkiting-02.png'
 
 const styles = theme => ({
   appBar: {
@@ -76,22 +77,7 @@ function NavBar(props) {
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <div>
-            <Typography
-              variant="h4"
-              className={classes.brandText}
-              display="inline"
-              color="primary"
-            >
-              Wa
-            </Typography>
-            <Typography
-              variant="h4"
-              className={classes.brandText}
-              display="inline"
-              color="secondary"
-            >
-              Ver
-            </Typography>
+            <img src={Logo} style={{ width: '100%', maxWidth: 100 }} alt="logo" />
           </div>
           <div>
             <Hidden mdUp>

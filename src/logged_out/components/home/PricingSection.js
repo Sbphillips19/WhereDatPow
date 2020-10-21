@@ -67,14 +67,16 @@ function PricingSection(props) {
             data-aos="zoom-in-up"
           >
             <PriceCard
-              title="Starter"
+              title="Intro to Kiteboarding"
               pricing={
                 <span>
-                  $14.99
-                  <Typography display="inline"> / month</Typography>
+                  $100
+                  <Typography display="inline"> / 1.5 hours</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Learn about safety and basics of kiting",
+                "Learn about the wind window, launching, and landing",
+                "Use a trainer kite to get the feel of manuevering a kite"]}
             />
           </Grid>
           <Grid
@@ -88,14 +90,16 @@ function PricingSection(props) {
           >
             <PriceCard
               highlighted
-              title="Premium"
+              title="Kiteboarding Level I"
               pricing={
                 <span>
-                  $29.99
-                  <Typography display="inline"> / month</Typography>
+                  $450
+                  <Typography display="inline"> / 3 hours</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Learn about safety and basics of kiting on snow",
+                "Launch and land your first kite and learn how to self launch and self land",
+                "Get riding and learn how to properly power the kite"]}
             />
           </Grid>
           <Grid
@@ -108,14 +112,14 @@ function PricingSection(props) {
             data-aos-delay={isWidthUp("md", width) ? "400" : "0"}
           >
             <PriceCard
-              title="Business"
+              title="Kiteboarding Level II"
               pricing={
                 <span>
-                  $49.99
-                  <Typography display="inline"> / month</Typography>
+                  $450
+                  <Typography display="inline"> / 3 hours</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["Learn how to transition", "Learn how to go upwind and get back to where you started", "Learn the power of kiteloops (necessary to get up the mountain)"]}
             />
           </Grid>
           <Grid
@@ -128,14 +132,53 @@ function PricingSection(props) {
             data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
           >
             <PriceCard
-              title="Tycoon"
+              title="Hourly professional lessons"
               pricing={
                 <span>
-                  $99.99
-                  <Typography display="inline"> / month</Typography>
+                  $100
+                  <Typography display="inline"> / hour</Typography>
                 </span>
               }
-              features={["Feature 1", "Feature 2", "Feature 3"]}
+              features={["For intermediate/advanced riders", "Learn how to jump propery and boost higher", "Learn how to glide down the mountain"]}
+            />
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            lg={3}
+            className={classes.cardWrapper}
+            data-aos="zoom-in-up"
+          >
+            <PriceCard
+              title="Drone photography"
+              pricing={
+                <span>
+                  $100
+                  <Typography display="inline"> / hour</Typography>
+                </span>
+              }
+              features={["Mavic Air 2", "Comes with SD card", "We will record you and give you the SD card at the end of your session"]}
+            />
+          </Grid>
+          <Grid
+            item
+            className={classes.cardWrapper}
+            xs={12}
+            sm={6}
+            lg={3}
+            data-aos="zoom-in-up"
+            data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
+          >
+            <PriceCard
+              title="Backcountry Expeditions"
+              pricing={
+                <span>
+                  Contact for prices
+                  <Typography display="inline"> / hour</Typography>
+                </span>
+              }
+              features={["Kiteboard backcountry", "Advanced riders only", "Must provide proof of avy 1 and understand risks"]}
             />
           </Grid>
         </Grid>

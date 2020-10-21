@@ -2,18 +2,17 @@ import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import {
-  Grid,
   Typography,
   Card,
-  Button,
-  Hidden,
   Box,
   withStyles,
   withWidth,
   isWidthUp,
 } from "@material-ui/core";
 import WaveBorder from "../../../shared/components/WaveBorder";
-import ZoomImage from "../../../shared/components/ZoomImage";
+// import Jumping from '../../../shared/snowkite/air.jpg';
+import Dna from '../../../shared/snowkite/dna.jpg';
+import Logo from '../../../shared/logos/snowkiting-02.png';
 
 const styles = (theme) => ({
   extraLargeButtonLabel: {
@@ -112,56 +111,31 @@ function HeadSection(props) {
             >
               <div className={classNames(classes.containerFix, "container")}>
                 <Box justifyContent="space-between" className="row">
-                  <Grid item xs={12} md={5}>
-                    <Box
-                      display="flex"
-                      flexDirection="column"
-                      justifyContent="space-between"
-                      height="100%"
+                  <Box
+                    display="flex"
+                    flexDirection="column"
+                    justifyContent="center"
+                    alignItems="center"
+                    height="100%"
+                  >
+                    <Typography
+                      variant={isWidthUp("lg", width) ? "h3" : "h4"}
                     >
-                      <Box mb={4}>
-                        <Typography
-                          variant={isWidthUp("lg", width) ? "h3" : "h4"}
-                        >
-                          Free Template for building an SaaS app using
-                          Material-UI
+                      Salt Lake City Kite School
                         </Typography>
-                      </Box>
-                      <div>
-                        <Box mb={2}>
-                          <Typography
-                            variant={isWidthUp("lg", width) ? "h6" : "body1"}
-                            color="textSecondary"
-                          >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
-                          </Typography>
-                        </Box>
-                        <Button
-                          variant="contained"
-                          color="secondary"
-                          fullWidth
-                          className={classes.extraLargeButton}
-                          classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/dunky11/react-saas-template"
-                        >
-                          Download from GitHub
-                        </Button>
-                      </div>
-                    </Box>
-                  </Grid>
-                  <Hidden smDown>
-                    <Grid item md={6}>
-                      <ZoomImage
-                        src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
-                        className={classes.image}
-                        alt="header example"
-                      />
-                    </Grid>
-                  </Hidden>
+                    <img src={Dna} alt="dna" style={{ maxWidth: 1000, width: '100%', marginTop: 20 }} />
+                  </Box>
                 </Box>
               </div>
             </Card>
+            <div style={{ margin: 'auto' }}>
+              <img src={Logo} style={{ width: '100%', maxWidth: 500 }} alt="logo" />
+              <Typography
+                variant={isWidthUp("lg", width) ? "h3" : "h4"}
+              >
+                Coming next winter 2021
+              </Typography>
+            </div>
           </Box>
         </div>
       </div>
